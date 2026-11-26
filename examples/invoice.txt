@@ -1,0 +1,8 @@
+From: billing@paper-supplier.test
+To: camille.martin@my-company.test
+Date: 22/11/2026
+Subject: Invoice no. 2026-1187
+Hello,
+Please find attached the November invoice: €1,240.00 incl. VAT, due on December 10.
+Best regards,
+Billing department

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local assistant</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <select id="model" aria-label="Model"></select>
+  <button id="load">Load</button>
+  <button id="folder">Open a folder</button>
+  <label><input type="checkbox" id="confirm" checked> Ask before acting</label>
+  <button id="new">New</button>
+</header>
+<p id="status">Choose a model, then click “Load”.</p>
+<main id="thread"></main>
+<form id="form">
+  <textarea id="input" rows="2" placeholder="Your message" aria-label="Your message"></textarea>
+  <button id="send" disabled>Send</button>
+  <button type="button" id="stop" hidden>Stop</button>
+</form>
+<details id="settings">
+  <summary>System prompt</summary>
+  <textarea id="system" rows="6" aria-label="System prompt"></textarea>
+</details>
+<input type="file" id="fallback" webkitdirectory hidden>
+<noscript>JavaScript is required.</noscript>
+<script>
+  // On http://[::]:8765 (the link printed by http.server), Chrome disables WebGPU: localhost is required.
+  if (["[::]", "0.0.0.0"].includes(location.hostname)) location.hostname = "localhost";
+  if (location.protocol === "file:")
+    document.getElementById("status").textContent = "Page opened as a file: run start.command, then open http://localhost:8765.";
+</script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

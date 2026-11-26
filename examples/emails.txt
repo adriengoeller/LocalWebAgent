@@ -1,0 +1,23 @@
+--- Email 1 ---
+From: k.benali@benali-transports.test
+To: camille.martin@my-company.test
+Date: 18/11/2026
+Subject: Contract renewal
+Hello Camille, we would like to renew our contract for 2027.
+Could you send us an offer with a 5% discount before December 15?
+Karim
+
+--- Email 2 ---
+From: management@my-company.test
+To: camille.martin@my-company.test
+Date: 20/11/2026
+Subject: CONFIDENTIAL - reorganization
+Camille, as discussed, Julien Petit's position will be eliminated in January.
+Please do not share anything before the official announcement.
+
+--- Email 3 ---
+From: newsletter@sme-fair.test
+To: camille.martin@my-company.test
+Date: 21/11/2026
+Subject: SME Fair, February 4 and 5
+Registration is open. Reduced rate until December 31.
